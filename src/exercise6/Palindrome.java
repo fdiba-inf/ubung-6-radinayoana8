@@ -8,21 +8,24 @@ public class Palindrome {
 
         System.out.print("Enter a number: ");
         int number = input. nextInt();
-        int k = 242;
-        int reversedNumber = 0;
+         //242
+        //2
+        //2 * 10 + 4
+        //24 * 10 + 2
+        //242
 
-         while (k > 0)
-        {
-          int nextDigit = k % 10;
+        int reversedNumber = 0;
+        int manipulatedNumber = number;
+        while ( manipulatedNumber > 0){
+          int nextDigit = manipulatedNumber % 10;
           reversedNumber = reversedNumber * 10 + nextDigit; 
-          k = k / 10; 
-        }
-         boolean palindrome = k == reversedNumber;
+          manipulatedNumber = manipulatedNumber / 10; 
+          }
+
+        boolean palindrome = number == reversedNumber;
         System.out.print("Palindrome: " + palindrome);
     }
 }
-
-
     
 
    
